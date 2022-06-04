@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale= 1.0" >
+    <title>Health Website</title>
+
+    <style>
+      .font{
+        font-family:Arial, Helvetica, sans-serif;
+        color: rgb(68, 65, 65);
+      }
+
+      body{
+        overflow-y: scroll;
+      }
+
+      .flex1{
+        display:flex;
+        flex-direction: row;
+        border: 1px solid black;
+        padding: 10px;
+        gap:20px;
+        box-sizing:border-box;
+        justify-content: center;;
+        
+        
+      }
+
+      .box1{
+        display: flex;
+        height: 80px;
+        border: 1px solid black;
+        width: 50%;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 10px;
+        gap:10px;
+        box-sizing: border-box; 
+      }
+
+      .box_1{
+        align-items: center;
+      }
+
+      .box2{
+        display:flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items:center;
+        border: 1px solid black;
+        width: 400px;
+        box-sizing: border-box;
+        gap:10px;
+      }
+
+      .flex2{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        border: 1px solid black;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .box3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+        width:700px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        gap:10px;
+        padding:10px;
+      }
+
+      .button{
+        border-top-left-radius: 50px; 
+        border-top-right-radius:50px; 
+        border-bottom-right-radius:50px; 
+        font-size: large;
+        background-color: white;
+      }
+      
+
+      .box4{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        border: 1px solid black;
+        width: 400px;
+        box-sizing: border-box;
+        gap:10px;
+        font-size: larger;
+      }
+    
+      .flex3{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding:10px;
+        gap:10px;
+        border:1px solid black;
+        flex-wrap: wrap;
+        
+      }
+
+      
+
+      .shape{
+        height:14px;
+        width:14px;
+        transform: rotate(45deg);
+        border-right: 3px solid rgb(129, 1, 248);
+        border-bottom: 3px solid rgb(129, 1, 248);
+      }
+
+      .shape2{
+        height:14px;
+        width:14px;
+        transform: rotate(45deg);
+        border-top: 3px solid rgb(164, 184, 204) ;
+        border-left: 3px solid rgb(164, 184, 204);
+      }
+
+      .gap{
+        gap:40px;
+      }
+
+    </style>
+  </head>
+
+
+  <body> <!--style="background-image: url('Screenshot5.png'); background-repeat: no-repeat; background-position-y: center; background-attachment: fixed;">-->
+    <div class="flex1">
+      <div style="color:rgb(129, 1, 248); font-size: xx-large;" class="box1 box_1 font" > 
+        <img src="Screenshot1.png" alt="logo"><b>HealthWebsite</b></div>
+      <div class="box1 font" style="font-size:medium;">
+        <div class="box2"><b>Research</b></div>
+        <div class="box2"><b>Data Ownership</b></div>
+        <div class="box2" style="border-bottom: 3px solid turquoise;"><b>How it Works</b></div>
+        <div class="box2"><b>Pricing</b></div>
+        <button class="box2 button" style="font-size:medium;">
+          <img src="Screenshot2.png" alt="login logo">
+          <b>LOGIN</b></div>
+      </div>
+    </div>
+
+    <div class="flex2">
+      <div class="box3 font">
+        <h1 style="font-size: 60px; border: 1px solid black; margin: 10px">How it Works</h1>
+        <p style="font-size: 20px; text-align-last: center; border: 1px solid black">No phone calls No faxes. No navigating patient portals.
+           Health Website<br>gathers all of your medical records so you don't have to</p>
+      </div>
+      <div  style="justify-content: center" class="box1">
+        <button class="box2 button font" style="width: 150px; color: white; background-color: rgb(115, 14, 248); border: none"><b>Let's Go</b></button>
+      </div>
+    </div>
+
+    
+
+    <div style="height: 200px; margin: 0 60px" class="flex1 font">
+      <div class="box4" style="border-bottom: 4px solid rgb(115, 14, 248)" >
+        <img src="icon1.png" style="height: 56px; width: 68px">
+        <p style="text-align-last: center; color: rgb(115, 14, 248);"><b>Tell us about your<br>care</b></p>
+      </div>
+
+      <div class="box4">
+        <img src="icon2.png" style="height: 56px; width: 48px">
+        <p style="text-align-last: center"><b>We track down all<br>your records</b></p>
+      </div>
+
+      <div class="box4">
+        <img src="icon3.png" style="height: 56px; width: 48px">
+        <p style="text-align-last: center"><b>We organise your<br>records</b></p>
+      </div>
+
+      <div class="box4">
+        <img src="icon4.png" style="height: 56px; width: 60px">
+        <p style="text-align-last: center"><b>You are in control of<br>your timeline</b></p>
+      </div>
+    </div>
+
+
+    <div class="box1 font" style="height: 650px; width:100%;">
+      
+      <div class="flex3" style=" border: 1px solid black; padding-left: 300px; padding-top:80px; width: 650px">
+        <div class="flex3" style="width:500px">
+           
+            <h3>We're committed to public good research</h3>
+              <p>After we send your requests, we call your doctors to make sure<br> 
+              they've received and processed them. We might need to call<br> them
+              eveyday for over a week-and endure lots of hold<br>music-before we
+              get the confirmation <br><br>
+              Even if doctor has moved or retired, we'll find where your<br>records 
+              or get a confirmation they've been destroyed 
+              </p>
+        </div>
+          
+          
+          <div class="flex3" style="width:300px"><h3><b>Participation is up to you</b></h3></div>
+          <div class="flex3" style="width:300px"><h3><b>We anonymize your data</b></h3></div>
+          <div class="flex3" style="width:300px"><h3><b>Withdraw at any time</b></h3></div>
+
+          <div class="flex3 " style="height:218px; width: 50px">
+            <div class="shape2"></div>
+          </div>
+          <div class="flex3" style="height:56px; width: 50px">
+            <div class="shape"></div>
+          </div>
+          <div class="flex3" style="height:56px; width: 50px">
+            <div class="shape"></div>
+          </div>
+          <div class="flex3" style="height:56px; width: 50px">
+            <div class="shape"></div>
+          </div>
+
+
+      </div>
+      <div class="flex3" style="padding-top:72px">
+      <img style="height:550px; width:500px" src="Screenshot6.png" alt="communication">
+      </div>
+      </div>
+
+      <div class="box2 font" style="height:60px; width: 100%; font-size: 40px;">Your information stays up to date</div>
+
+      <div class="box1 font" style="height: 650px; width:100%">
+        <div class="flex3 gap" style="width:50%">
+          <img src="Screenshot7.png" alt="displaying medical records" style="height:280px; width:380px">
+          <h1>We'll ping your doctors<br>about new records</h1>
+          <p style="font-size:18px">We know that there may be frequent updates to your<br>health history 
+             as you go in for treatments and checkups.<br>We'll request new medical
+             records for you so that, like<br>magic, your timeline stays updated </p>
+        </div>
+
+
+        <div class="flex3 gap" style="width:50%">
+          <img src="Screenshot8.png" alt="patient's appointment" style="height:280px; width:380px">
+          <h1>Let us know when you have<br>an appointment</h1>
+          <p style="font-size:18px">We'll do our best to guess when you have new<br>appointments, based
+            on your past history and upcoming<br>followups. To keep your timeline
+            as up to date as possible,<br>give us a heads up whenever you have new
+            <br>appointment!</p>
+      
+      </div>
+      
+      
+      
+      
+      
+      
+      </div>
+
+      
+    
+
+     
+      
+
+
+
+  </body>
+</html>
