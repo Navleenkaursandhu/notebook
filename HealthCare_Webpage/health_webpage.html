@@ -199,11 +199,55 @@
       padding-left: 14px;
       border-left: 3px solid rgb(184, 202, 220);
     }
+
+    .square{
+      width:50px;
+      height: 50px;
+      background-color: blue;
+    }
+
+    .sqcircle{
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+     
+    }
+
+    .position{
+      position: relative;
+    }
+
+    .position1{
+      position: absolute;
+      top:300px;
+      left: 220px;
+    }
+
+    .position2{
+      position: absolute;
+      top:20px;
+      right: 90px;
+      transform: rotate(270deg);
+    }
+
+    .position3{
+      position:absolute;
+      top:100px;
+      left:80px;
+    }
+
+    .position4{
+      position:absolute;
+      top:360px;
+      right:280px;
+
+    }
   </style>
 </head>
 
 <body>
   <div class="flex1">
+  
     <div style="color:rgb(129, 1, 248); font-size: xx-large;" class="box1 box_1 font">
       <img src="Screenshot1.png" alt="logo"><b>HealthWebsite</b>
     </div>
@@ -219,7 +263,11 @@
   </div>
   </div>
 
-  <div class="flex2">
+  <div class="flex2 position">
+    <div class="sqcircle position1" style=" background-color: rgb(54, 189, 238); width:68px; height:68px;"></div>
+    <div class="sqcircle position2" style="background-color: rgb(12, 238, 181); width:90px; height:90px;"></div>
+    <div class="square position3" style="background-color: rgb(236, 24, 91)"></div>
+    <div class="square position4" style="background-color: yellow"></div>
     <div class="box3 font">
       <h1 style="font-size: 60px; border: 1px solid black; margin: 10px">How it Works</h1>
       <p class="font_medium text" style="border: 1px solid black">No phone calls No faxes. No
@@ -257,7 +305,7 @@
 
   <div class="flex4 font justifycontent font_medium" style="gap:90px; padding-top:100px">
     <div class="box5 justifycontent flexstart">
-      <div class="box5" style="padding: 0 0; background-color: lightblue;">
+      <div class="box5" style="padding: 0 0">
         <div class="flex4 spacebetween">
         <b>We're committed to public good research</b>
         <div class="shape2"></div>
@@ -333,8 +381,8 @@
 
   <div class="flex4 font justifycontent font_medium " style="gap:90px; padding-top:100px">
     <div class="box5 justifycontent flexstart">
-      <div class="box5" style="padding: 0 0; background-color: lightblue;">
-        <div class="flex4 spacebetween" >
+      <div class="box5" style="padding: 0 0; background-color: rgb(208, 233, 241); border-radius: 10px;">
+        <div class="flex4 spacebetween">
           <b>We anonymize all records</b>
           <div class="shape2"></div>
         </div>
