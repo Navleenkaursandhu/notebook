@@ -95,25 +95,26 @@
       margin-bottom: 100px;
     }
 
+    .style {
+      background-color: white;
+      border: 3px solid rgb(222, 232, 242);
+      font-size: 14px;
+      width: 120px;
+      height: 40px;
+    }
+
     .style1 {
       margin: 0 30px;
       border-radius: 20px;
-      background-color: rgb(98, 98, 174);
+      background-color: #2c2c4b;
       padding-top: 80px;
       padding-bottom: 10px;
       gap: 24px;
-
     }
 
     .style2 {
       padding-left: 14px;
       border-left: 3px solid rgb(184, 202, 220);
-    }
-
-    .square {
-      width: 50px;
-      height: 50px;
-      background-color: blue;
     }
 
     .sqcircle {
@@ -182,7 +183,7 @@
 
 <body>
   <div class="flex4 justifycontent" style="padding-left: 80px; gap: 400px">
-    <div style="color:rgb(129, 1, 248); font-size: xx-large;" class="flex4 box_1 font">
+    <div class="flex4 box_1 font" style="color:rgb(129, 1, 248); font-size: xx-large">
       <img src="Screenshot1.png" alt="logo"><b>HealthWebsite</b>
     </div>
     <div class="flex4 font flexstart" style="font-size:medium; gap:10px">
@@ -190,21 +191,20 @@
       <div class="flex4 box_1 justifycontent"><b>Data Ownership</b></div>
       <div class="flex4 box_1 justifycontent" style="border-bottom: 3px solid turquoise;"><b>How it Works</b></div>
       <div class="flex4 box_1 justifycontent"><b>Pricing</b></div>
-      <button class="flex4 box_1 justifycontent button font"
-        style="background-color: white;border: 3px solid rgb(222, 232, 242); font-size: 14px; width: 120px;height:40px ">
-        <img src="Screenshot2.png" alt="login logo">
-        <b style="color:rgb(129, 1, 248)">LOGIN</b></button>
+      <button class="flex4 box_1 justifycontent button style font" style="color:rgb(129, 1, 248)">
+        <img src="Screenshot2.png" alt="login logo"><b>LOGIN</b>
+      </button>
     </div>
   </div>
 
 
   <div class="box5 box_1 justifycontent position" style="height:500px">
-    <div class="sqcircle position1" style=" background-color: rgb(54, 189, 238); width:68px; height:68px;"></div>
-    <div class="sqcircle position2" style="background-color: rgb(12, 238, 181); width:90px; height:90px;"></div>
-    <div class="square position3" style="background-color: rgb(236, 24, 91)"></div>
-    <div class="square position4" style="background-color: yellow"></div>
-    <div class="square position6" style="background-color: rgb(181, 41, 236)"></div>
-    <div class="sqcircle position7" style=" background-color: rgb(247, 32, 175); width:70px; height:70px;"></div>
+    <div class="sqcircle position1" style="background-color: rgb(54, 189, 238); width: 68px; height: 68px;"></div>
+    <div class="sqcircle position2" style="background-color: rgb(12, 238, 181); width: 90px; height: 90px;"></div>
+    <div class="square position3" style="background-color: rgb(236, 24, 91); width: 60px; height: 60px;"></div>
+    <div class="square position4" style="background-color: rgb(248, 244, 2); width:50px; height: 50px;"></div>
+    <div class="square position6" style="background-color: rgb(181, 41, 236); width: 80px; height: 80px;"></div>
+    <div class="sqcircle position7" style="background-color: rgb(247, 32, 175); width: 70px; height: 70px;"></div>
     <div class="box5 box_1 justifycontent font position5" style="height:100%;width: 100%">
       <h1 style="font-size:80px">How it Works</h1>
       <p style="font-size:20px; text-align:center">No phone calls No faxes. No navigating patient portals. Health
@@ -249,7 +249,6 @@
           <b>We're committed to public good research</b>
           <div class="shape2"></div>
         </div>
-
         <p>After we send your requests, we call your doctors to make sure<br>
           they've received and processed them. We might need to call<br> them
           eveyday for over a week-and endure lots of hold<br>music-before we
@@ -325,10 +324,10 @@
           <b>We anonymize all records</b>
           <div class="shape2"></div>
         </div>
-        We don't just redact your data by crossing out or deleting your<br>name.
+        <p>We don't just redact your data by crossing out or deleting your<br>name.
         When preparing records to share with researchers, we<br>actually remove
         specific pieces of information from your<br> records like- lab results or
-        -and put those into a<br>separate file
+        -and put those into a<br>separate file</p>
       </div>
       <div class="flex4 spacebetween">
         <b>We structure information from records<br>into a single dataset</b>
@@ -339,7 +338,6 @@
         <div class="shape"></div>
       </div>
     </div>
-
     <div class="box5 justifycontent">
       <img src="Screenshot10.png" alt="records" style="height:600px; width:500px">
     </div>
@@ -347,7 +345,8 @@
 
   <div class="box5 box_1 font style1 justifycontent" style="margin-top: 90px; border:none">
     <h1 style="font-size: 40px; color:white">Own your data, own your health</h1>
-    <button class="flex4 box_1 justifycontent button font button1" style="background-color: white; width: 180px; color: white;">
+    <button class="flex4 box_1 justifycontent button font button1"
+      style="background-color: white; width: 180px; color: white;">
       <img src="Screenshot2.png" alt="login logo">
       <b style="color: black">Sign up</b>
     </button>
