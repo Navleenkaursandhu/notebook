@@ -9,12 +9,9 @@
   <style>
     .flex {
       display: flex;
-      flex-direction: row;
-      height: 50px;
       border: 1px solid black;
       padding: 10px;
       gap: 10px;
-      justify-content: flex-start;
     }
 
     .box1 {
@@ -22,7 +19,6 @@
     }
 
     .box2 {
-      display: flex;
       border: 1px solid black;
       flex-grow: 1;
     }
@@ -38,7 +34,7 @@
   <div class="flex">
     <div class="box1">div 1 only takes space needed</div>
     <div class="box2">div 2 fills the remaining space</div>
-    <div class="box3">div 3 takes up 100px</div>
+    <div class="box3">div 3 takes up a width of 100px</div>
   </div>
 </body>
 
