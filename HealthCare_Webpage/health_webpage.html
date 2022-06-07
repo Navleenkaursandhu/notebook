@@ -7,130 +7,15 @@
   <title>Health Website</title>
 
   <style>
-    .font {
-      font-family: Arial, Helvetica, sans-serif;
-      color: rgb(68, 65, 65);
-    }
-
     body {
       overflow-y: scroll;
-    }
-
-    .flex1 {
-      display: flex;
-      flex-direction: row;
-      border: 1px solid black;
-      padding: 10px;
-      gap: 20px;
-      box-sizing: border-box;
-      justify-content: center;
-    }
-
-    .box1 {
-      display: flex;
-      height: 80px;
-      border: 1px solid black;
-      width: 50%;
-      flex-direction: row;
-      justify-content: flex-start;
-      padding: 10px;
-      gap: 10px;
-      box-sizing: border-box;
-    }
-    
-    .box2 {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      border: 1px solid black;
-      width: 400px;
-      box-sizing: border-box;
-      gap: 10px;
-    }
-
-    .flex2 {
-      display: flex;
-      flex-direction: column;
-      height: 500px;
-      border: 1px solid black;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-
-    .box3 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 450px;
-      width: 700px;
-      border: 1px solid black;
-      box-sizing: border-box;
-      gap: 10px;
-      padding: 10px;
-    }
-
-    .button {
-      border-top-left-radius: 50px;
-      border-top-right-radius: 50px;
-      border-bottom-right-radius: 50px;
-      font-size: large;
-      background-color: white;
-    }
-
-    .box4 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border: 1px solid black;
-      width: 400px;
-      box-sizing: border-box;
-      gap: 10px;
-      font-size: larger;
-    }
-
-    .flex3 {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      padding: 10px;
-      gap: 10px;
-      border: 1px solid black;
-      flex-wrap: wrap;
-
-    }
-
-    .shape {
-      height: 14px;
-      width: 14px;
-      transform: rotate(45deg);
-      border-right: 3px solid rgb(129, 1, 248);
-      border-bottom: 3px solid rgb(129, 1, 248);
-    }
-
-    .shape2 {
-      height: 14px;
-      width: 14px;
-      transform: rotate(45deg);
-      border-top: 3px solid rgb(164, 184, 204);
-      border-left: 3px solid rgb(164, 184, 204);
-    }
-
-    .gap {
-      gap: 40px;
     }
 
     .flex4 {
       display: flex;
       padding: 10px;
       gap: 10px;
-      flex-direction: row;
-      border: 1px solid black;
+      box-sizing: border-box;
     }
 
     .box5 {
@@ -138,15 +23,10 @@
       flex-direction: column;
       padding: 10px;
       gap: 10px;
-      border: 1px solid black;
     }
 
     .box_1 {
       align-items: center;
-    }
-
-    .font_medium {
-      font-size: 20px;
     }
 
     .text {
@@ -169,6 +49,34 @@
       flex-wrap: wrap;
     }
 
+    .spacearound {
+      justify-content: space-around;
+    }
+
+    .button {
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      font-size: large;
+      background-color: white;
+    }
+
+    .shape {
+      height: 14px;
+      width: 14px;
+      transform: rotate(45deg);
+      border-right: 3px solid rgb(129, 1, 248);
+      border-bottom: 3px solid rgb(129, 1, 248);
+    }
+
+    .shape2 {
+      height: 14px;
+      width: 14px;
+      transform: rotate(45deg);
+      border-top: 3px solid rgb(164, 184, 204);
+      border-left: 3px solid rgb(164, 184, 204);
+    }
+
     .line {
       width: 1200px;
       background-color: rgb(183, 199, 215);
@@ -177,9 +85,11 @@
     }
 
     .button1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 150px;
       height: 50px;
-      color: white;
       background-color: rgb(147, 64, 255);
       border: none;
       margin-bottom: 100px;
@@ -200,115 +110,144 @@
       border-left: 3px solid rgb(184, 202, 220);
     }
 
-    .square{
-      width:50px;
+    .square {
+      width: 50px;
       height: 50px;
       background-color: blue;
     }
 
-    .sqcircle{
+    .sqcircle {
       border-top-right-radius: 50px;
       border-bottom-right-radius: 50px;
       border-bottom-left-radius: 50px;
-     
     }
 
-    .position{
+    .position {
       position: relative;
     }
 
-    .position1{
+    .position1 {
       position: absolute;
-      top:300px;
+      top: 300px;
       left: 220px;
     }
 
-    .position2{
+    .position2 {
       position: absolute;
-      top:20px;
+      top: 80px;
       right: 90px;
       transform: rotate(270deg);
     }
 
-    .position3{
-      position:absolute;
-      top:100px;
-      left:80px;
+    .position3 {
+      position: absolute;
+      top: 100px;
+      left: 80px;
     }
 
-    .position4{
-      position:absolute;
-      top:360px;
-      right:280px;
-
+    .position4 {
+      position: absolute;
+      top: 360px;
+      right: 280px;
     }
+
+    .position5 {
+      position: absolute;
+    }
+
+    .position6 {
+      position: absolute;
+      top: 100px;
+      left: 800px;
+    }
+
+    .position7 {
+      position: absolute;
+      top: 20px;
+      left: 500px;
+      transform: rotate(90deg);
+    }
+
+    .font_medium {
+      font-size: 20px;
+    }
+
+    .font {
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(68, 65, 65);
+    }
+
   </style>
 </head>
 
 <body>
-  <div class="flex1">
-  
-    <div style="color:rgb(129, 1, 248); font-size: xx-large;" class="box1 box_1 font">
+  <div class="flex4 justifycontent" style="padding-left: 80px; gap: 400px">
+    <div style="color:rgb(129, 1, 248); font-size: xx-large;" class="flex4 box_1 font">
       <img src="Screenshot1.png" alt="logo"><b>HealthWebsite</b>
     </div>
-    <div class="box1 font" style="font-size:medium;">
-      <div class="box2"><b>Research</b></div>
-      <div class="box2"><b>Data Ownership</b></div>
-      <div class="box2" style="border-bottom: 3px solid turquoise;"><b>How it Works</b></div>
-      <div class="box2"><b>Pricing</b></div>
-      <button class="box2 button font_medium">
+    <div class="flex4 font flexstart" style="font-size:medium; gap:10px">
+      <div class="flex4 box_1 justifycontent"><b>Research</b></div>
+      <div class="flex4 box_1 justifycontent"><b>Data Ownership</b></div>
+      <div class="flex4 box_1 justifycontent" style="border-bottom: 3px solid turquoise;"><b>How it Works</b></div>
+      <div class="flex4 box_1 justifycontent"><b>Pricing</b></div>
+      <button class="flex4 box_1 justifycontent button font"
+        style="background-color: white;border: 3px solid rgb(222, 232, 242); font-size: 14px; width: 120px;height:40px ">
         <img src="Screenshot2.png" alt="login logo">
-        <b>LOGIN</b>
+        <b style="color:rgb(129, 1, 248)">LOGIN</b></button>
     </div>
   </div>
-  </div>
 
-  <div class="flex2 position">
+
+  <div class="box5 box_1 justifycontent position" style="height:500px">
     <div class="sqcircle position1" style=" background-color: rgb(54, 189, 238); width:68px; height:68px;"></div>
     <div class="sqcircle position2" style="background-color: rgb(12, 238, 181); width:90px; height:90px;"></div>
     <div class="square position3" style="background-color: rgb(236, 24, 91)"></div>
     <div class="square position4" style="background-color: yellow"></div>
-    <div class="box3 font">
-      <h1 style="font-size: 60px; border: 1px solid black; margin: 10px">How it Works</h1>
-      <p class="font_medium text" style="border: 1px solid black">No phone calls No faxes. No
-        navigating patient portals.
-        Health Website<br>gathers all of your medical records so you don't have to</p>
-    </div>
-    <div class="box1 justifycontent">
-      <button class="box2 button font button1">
-        <img src="Screenshot12.png" alt="logo">
-        <b>Let's Go</b></button>
+    <div class="square position6" style="background-color: rgb(181, 41, 236)"></div>
+    <div class="sqcircle position7" style=" background-color: rgb(247, 32, 175); width:70px; height:70px;"></div>
+    <div class="box5 box_1 justifycontent font position5" style="height:100%;width: 100%">
+      <h1 style="font-size:80px">How it Works</h1>
+      <p style="font-size:20px; text-align:center">No phone calls No faxes. No navigating patient portals. Health
+        Website
+        <br>gathers all of your medical records so you don't have to
+      </p>
+
+      <div>
+        <button class="button font button1" style="margin-top: 40px; gap:10px; height:50px; color: white">
+          <img src="Screenshot12.png" alt="logo"><b>Let's Go</b>
+        </button>
+      </div>
     </div>
   </div>
 
-  <div style="height: 200px; margin: 0 60px" class="flex1 font text">
-    <div class="box4" style="border-bottom: 4px solid rgb(115, 14, 248)">
-      <img src="icon1.png" style="height: 56px; width: 68px">
+  <div style="height: 200px; margin: 0 60px; font-size: larger;" class="flex4 justifycontent font text ">
+    <div class="box5 box_1 justifycontent" style="border-bottom: 4px solid rgb(115, 14, 248); padding:60px">
+      <img src="icon1.png" style="height: 56px; width: 68px;">
       <p style="color: rgb(115, 14, 248);"><b>Tell us about your<br>care</b></p>
     </div>
 
-    <div class="box4">
+    <div class="box5 box_1 justifycontent" style="padding:60px">
       <img src="icon2.png" style="height: 56px; width: 48px">
       <p><b>We track down all<br>your records</b></p>
     </div>
 
-    <div class="box4">
+    <div class="box5 box_1 justifycontent" style="padding:60px">
       <img src="icon3.png" style="height: 56px; width: 48px">
       <p><b>We organise your<br>records</b></p>
     </div>
 
-    <div class="box4">
+    <div class="box5 box_1 justifycontent" style="padding:60px">
       <img src="icon4.png" style="height: 56px; width: 60px">
       <p><b>You are in control of<br>your timeline</b></p>
     </div>
   </div>
 
-  <div class="flex4 font justifycontent font_medium" style="gap:90px; padding-top:100px">
+  <div class="flex4 font justifycontent" style="gap:90px; padding-top:100px; font-size: 20px;">
     <div class="box5 justifycontent flexstart">
       <div class="box5" style="padding: 0 0">
         <div class="flex4 spacebetween">
-        <b>We're committed to public good research</b>
-        <div class="shape2"></div>
+          <b>We're committed to public good research</b>
+          <div class="shape2"></div>
         </div>
 
         <p>After we send your requests, we call your doctors to make sure<br>
@@ -365,7 +304,7 @@
       timeline might look like. And [check out our frequently asked<br>
       questions to learn even more</p>
     <img src="Screenshot9.png" alt="health timeline" style="width:700px; height: 400px; margin-bottom: 30px;">
-    <button class="box2 button font button1">
+    <button class="button font button1" style="gap:10px; color: white;">
       <img src="Screenshot12.png" alt="logo">
       <b>Let'sGo</b>
     </button>
@@ -386,18 +325,18 @@
           <b>We anonymize all records</b>
           <div class="shape2"></div>
         </div>
-       We don't just redact your data by crossing out or deleting your<br>name.
-        When preparing records to share with researchers, we<br>actually remove 
-        specific pieces of information from your<br> records like- lab results or 
+        We don't just redact your data by crossing out or deleting your<br>name.
+        When preparing records to share with researchers, we<br>actually remove
+        specific pieces of information from your<br> records like- lab results or
         -and put those into a<br>separate file
       </div>
       <div class="flex4 spacebetween">
         <b>We structure information from records<br>into a single dataset</b>
-          <div class="shape"></div>
+        <div class="shape"></div>
       </div>
       <div class="flex4 spacebetween">
         <b>Researchers use those datasets with<br>the hopes of finding new breakthroughs</b>
-          <div class="shape"></div>
+        <div class="shape"></div>
       </div>
     </div>
 
@@ -408,7 +347,7 @@
 
   <div class="box5 box_1 font style1 justifycontent" style="margin-top: 90px; border:none">
     <h1 style="font-size: 40px; color:white">Own your data, own your health</h1>
-    <button class="box2 button font button1" style="background-color: white; width: 180px">
+    <button class="flex4 box_1 justifycontent button font button1" style="background-color: white; width: 180px; color: white;">
       <img src="Screenshot2.png" alt="login logo">
       <b style="color: black">Sign up</b>
     </button>
@@ -437,7 +376,7 @@
 
     <div class="box5" style="margin-left:200px">
       <div class="flex4 flexstart " style="gap:40px">
-        <button class="box2 button button1" style="margin-bottom: 0; font-size: 18px;">
+        <button class="button button1" style="margin-bottom: 0; font-size: 18px ;gap:10px; color:white">
           <img src="Screenshot12.png" alt="login logo">
           <b>LOGIN</b>
         </button>
