@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Code</title>
+  <title>q27</title>
 
   <style>
     li {
       display: flex;
       flex-direction: column;
       margin-bottom: 16px;
+      align-items: flex-start;
     }
 
     ol {
@@ -20,10 +21,8 @@
     li::before {
       counter-increment: section;
       content: counter(section);
-      border: 2px solid black;
       background-color: black;
       color: white;
-      width: 10px;
       padding: 4px 8px;
       text-align: left;
       margin-bottom: 4px;
@@ -32,12 +31,12 @@
 </head>
 
 <body>
-  <div style="border: 2px solid black; width:80%; padding: 8px; font-family: 'Times New Roman', Times, serif;">
-    <ol class="my-list-2">
+  <div style="border: 1px solid black; padding: 8px; font-family: 'Times New Roman', Times, serif;">
+    <ol>
       <li>Learn HTML</li>
       <li>Learn CSS</li>
       <li>Make Webpages using HTML and CSS</li>
-      <li>Learn Javascript<br/>and add interactivity<br/>to make it look good</li>
+      <li>Learn Javascript<br/>and add interactivity<br/>to the webpages</li>
       <li>Learn React</li>
     </ol>
   </div>
