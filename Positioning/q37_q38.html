@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>relative and absolute positining Css</title>
+
+  <style>
+    .container {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      background-color: #fcfcfc;
+      border: 1px solid black;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .box1 {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 25px;
+      height: 25px;
+      background-color: #ddd;
+    }
+
+    .box2 {
+      position: absolute;
+      bottom: 100px;
+      left: 50%;
+      width: 25px;
+      height: 25px;
+      background-color: #ddd;
+    }
+
+    .box3 {
+      position: absolute;
+      top: 100px;
+      right: 200px;
+      width: 100px;
+      height: 100px;
+      background-color: #ddd;
+    }
+
+    .box4 {
+      position: absolute;
+      top: 250px;
+      left: 10px;
+      width: 75px;
+      height: 75px;
+      background-color: #ddd;
+    }
+
+    .text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border: 1px solid black;
+      font-size: 72px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+    <div class="text">Wassup???</div>
+  </div>
+</body>
+
+</html>
