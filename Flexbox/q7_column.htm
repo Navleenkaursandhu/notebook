@@ -16,22 +16,21 @@
       border: 1px solid black;
     }
 
-    .div-1 {
+    .border {
       border: 1px solid black;
     }
 
-    .div-2 {
+    .fill-remaining {
       flex-grow: 1;
     }
-
   </style>
 </head>
 
 <body>
   <div class="div-0">
-    <div class="div-1">Div-1 - only take space needed</div>
-    <div class="div-1 div-2">Div-2 - Fill everything that remains</div>
-    <div class="div-1">Div-3 - Takes up 50px</div>
+    <div class="border">Div-1 - only take space needed</div>
+    <div class="border fill-remaining">Div-2 - Fill everything that remains</div>
+    <div class="border" style="height: 50px">Div-3 - Takes up 50px</div>
   </div>
 </body>
 
