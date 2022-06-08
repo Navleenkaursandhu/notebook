@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practice</title>
+
+  <style>
+    .flex {
+      width: 200px;
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .pill1 {
+      flex: 1;
+      height: 100%;
+      background-color: red;
+      border: 2px solid black;
+      border-right: 1px solid black;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
+
+    .pill2 {
+      flex: 1;
+      height: 100%;
+      background-color: white;
+      border: 2px solid black;
+      border-left: 1px solid black;
+      border-bottom-right-radius: 50px;
+      border-top-right-radius: 50px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="flex">
+    <div class="pill1"></div>
+    <div class="pill2"></div>
+  </div>
+</body>
+
+</html>
