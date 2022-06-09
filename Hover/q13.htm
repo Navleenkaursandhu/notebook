@@ -7,33 +7,38 @@
   <title>q13</title>
 
   <style>
+    body {
+      font-family: 'Times New Roman', Times, serif; 
+      font-size: medium;
+    }
+
     .flex {
       padding: 10px;
       gap: 10px;
       display: flex;
       width: 1000px;
       flex-wrap: wrap;
-      border: 2px solid black;
-      font-size: medium;
+      align-items: flex-start;
+      
     }
 
     .button-1 {
       width: 150px;
       background-color: rgb(239, 241, 243);
-    }
-
-    body {
-      font-family: 'Times New Roman', Times, serif; 
-      font-size: medium;
+      border-bottom: 10px solid grey;
+      border-top: 0px solid white;
+      padding: 8px;
     }
 
     .button-1:hover {
-      border-bottom: 7px solid grey;
-      border-top: 3px solid #fff;
+      cursor: pointer;
+      border-bottom-width: 7px;
+      border-top-width: 3px;
     }
 
     .button-1:active{
-      border-bottom: 5px solid grey;
+      border-bottom-width: 3px;
+      border-top-width: 7px;
     }
 
     .namecolor{
@@ -77,12 +82,12 @@
 
     <div class="button-1">
       <div><b>Beautiful</b></div>
-      <div class="namecolor"><i>by Akon ft. Colby<br>O'Donnis</i></div>
+      <div class="namecolor"><i>by Akon ft. Colby O'Donnis</i></div>
     </div>
 
     <div class="button-1">
       <div><b>Troublemaker</b></div>
-      <div class="namecolor"><i>by Akon ft.Sweet<br>Rush</i></div>
+      <div class="namecolor"><i>by Akon ft.Sweet Rush</i></div>
     </div>
 
     <div class="button-1">
