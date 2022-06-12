@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q40</title>
+
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: small;
+      }
+
+      .flex {
+        display: flex;
+        gap: 4px;
+        flex-wrap: wrap;
+        width: 240px;
+        border: 1px solid black;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="flex">
+      <input placeholder="Your first name"></input>
+      <button onclick="onclicking()">say hello</button>
+      <div id="demo2"></div>
+      <script>
+        function onclicking() {
+          document.getElementById("demo2").innerHTML= "Oh, hello there Navleen";
+        } 
+      </script>
+    </div>
+    
+  </body>
+</html>
