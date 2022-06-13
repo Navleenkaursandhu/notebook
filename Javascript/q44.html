@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>q44</title>
+
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    th {
+      text-align: left;
+    }
+  </style>
+
+  <script>
+    function myFunction() {
+      const length = document.querySelector("#demo0").value;
+      const count = document.querySelector("#demo1").value;
+      const charList = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*-_';
+      let x =' ';
+      for (let j=0; j<count; j++){
+      for(let i=0; i<length; i++) {
+        const num = Math.round(Math.random() * charList.length);
+        x = x + charList.substring(num, num+1);
+      }
+      document.getElementById("demo2").innerHTML= x; 
+    }
+    }
+  </script>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th>Character Length</th>
+      <td>
+        <input id="demo0" type="number"></input>
+      </td>
+    </tr>
+    <tr>
+      <th>Count</th>
+      <td>
+        <input id="demo1" type="number"></input>
+      </td>
+    </tr>
+  </table>
+
+  <button onclick="myFunction()">Generate random</button>
+
+  <div id="demo2"></div>
+</body>
+
+</html>
