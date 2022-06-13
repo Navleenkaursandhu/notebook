@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>q43</title>
+
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .flex {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      width: 300px;
+    }
+
+    .box {
+      width: 200px;
+    }
+  </style>
+
+  <script>
+    function myFunction() {
+      const min = Number(document.querySelector("#demo0").value);
+      const max = Number(document.querySelector("#demo1").value);
+      const count = Number(document.querySelector("#demo2").value);
+      const arr = [];
+  
+      while(arr.length < count) {
+        arr.push(Math.round(Math.random() * (max - min + 1) + min ));
+        document.getElementById("demo3").innerHTML= arr.toString();
+      }  
+    }
+  </script>
+</head>
+
+<body>
+  <div class="flex">
+    <div>Min limit</div>
+    <input id= "demo0" type="number" class="box" style="margin-left: 4px;"></input>
+    <div>Max limit</div>
+    <input id="demo1" type="number" class="box"></input>
+    <div>Count</div>
+    <input id="demo2" type="number" class="box" style="margin-left: 24px;"></input>
+  </div>
+  <button onclick="myFunction()">Generate random</button>
+  <div>Generated Num: <span id="demo3"></span></div>
+</body>
+
+</html>
