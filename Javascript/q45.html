@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>q45</title>
+
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .flex {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+  </style>
+
+  <script>
+    function myFunction() {
+      const a = Number(document.querySelector("#demo0").value);
+      const b = Number(document.querySelector("#demo1").value);
+      const c = document.querySelector("#demo2").value;
+
+      switch(c){
+      case "+": document.getElementById("demo3").innerHTML= a+b;
+      break;
+      case "*": document.getElementById("demo3").innerHTML= a*b;
+      break;
+      case "-": document.getElementById("demo3").innerHTML= a-b;
+      break;
+      case "/": document.getElementById("demo3").innerHTML= a/b;
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <div class="flex">
+    <input id="demo0" type="number">
+    <select id="demo2" name="operators">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <input id="demo1" type="number">
+    <button onclick="myFunction()">=</button>
+    <div id="demo3"></div>
+  </div>
+</body>
+
+</html>
