@@ -20,22 +20,19 @@
 
     .box {
       width: 200px;
-      border: 1px solid black;
     }
 
     button {
       margin-top: 5px;
     }
-
   </style>
 
   <script>
-
     function myFunction(){
-      let min = document.getElementById("demo0").value;
-      let max = document.getElementById("demo1").value;
+      let min = Number(document.getElementById("demo0").value);
+      let max = Number(document.getElementById("demo1").value);
       let x = Math.round(Math.random() * (max - min + 1) + min);
-      document.querySelector("#demo").innerHTML = "Generated number:" + " " + x;
+      document.querySelector("#demo").innerHTML = " " + x;
     }
   </script>
 </head>
@@ -47,9 +44,8 @@
     <div>Max limit</div>
     <input id="demo1" type="number" class="box"></input>
   </div>
-  <button onclick="myFunction()" type="button">Generate random</button>
-  <div id="demo">Generated number:</div>
-
+  <button onclick="myFunction()">Generate random</button>
+  <div>Generated Num:<span id="demo"></span></div>
 </body>
 
 </html>
