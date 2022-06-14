@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>q47</title>
+
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .flex {
+      display: flex;
+      gap: 10px;
+    }
+  </style>
+
+  <script>
+    var val = 0;
+    function myFunc() {
+    document.getElementById("demo0").innerHTML= val--;
+    }
+
+    function myFunction() {
+      document.getElementById("demo0").innerHTML= val++;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="flex">
+  <button onclick="myFunc()">-</button>
+  <div id="demo0">0</div>
+  <button onclick="myFunction()">+</button>
+  </div>
+</body>
+
+</html>
