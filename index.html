@@ -42,11 +42,14 @@
         margin-top: 2px;
         cursor: pointer;
         box-shadow: 0 3px rgb(99, 98, 98);
+        margin-bottom: -2px;
       }
 
       .button:active {
-        margin-top: 5px;
+        margin-top: 3px;
         cursor: progress;
+        box-shadow: 0 2px rgb(99, 98, 98);
+        margin-bottom: -4px;
       }
 
       div a {
@@ -54,7 +57,6 @@
         color: aliceblue;
         font-weight: bold;
       }
-
     </style>
   </head>
 
@@ -62,7 +64,7 @@
     <div class="flexbox-row content-center items-center">
       <div class="flexbox-col" >
         <h1>HTML and CSS</h1>
-      <div class= "flexbox-row" style="width: 800px">
+      <div class= "flexbox-row" style="max-width: 800px">
           <a class="button" href="./Shapes/q1_square.html">q1</a>
           <a class="button" href="./Shapes/roundedsquare.html" target="_blank">q2</a>
           <a class="button" href="./Shapes/circle.html" target="_blank">q3</a>
