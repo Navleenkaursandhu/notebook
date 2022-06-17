@@ -23,12 +23,13 @@
       const charList = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*-_';
       let x =' ';
       for (let j=0; j<count; j++){
-      for(let i=0; i<length; i++) {
-        const num = Math.round(Math.random() * charList.length);
-        x = x + charList.substring(num, num+1);
+        for(let i=0; i<length; i++) {
+          const num = Math.round(Math.random() * charList.length);
+          x = x + charList.substring(num, num+1);
+        }
+        x = x + '<br/>';
       }
-      document.getElementById("demo2").innerHTML= x + "<br>";
-    }
+      document.getElementById("demo2").innerHTML= x;
     }
   </script>
 </head>
