@@ -24,16 +24,16 @@
   </style>
 
   <script>
-    function myFunction() {
-      const min = Number(document.querySelector("#demo0").value);
-      const max = Number(document.querySelector("#demo1").value);
-      const count = Number(document.querySelector("#demo2").value);
+    function displayRandomNos() {
+      const min = Number(document.querySelector("#minNo").value);
+      const max = Number(document.querySelector("#maxNo").value);
+      const count = Number(document.querySelector("#countNo").value);
       const arr = [];
-  
-      while(arr.length < count) {
-        arr.push(Math.round(Math.random() * (max - min + 1) + min ));
-        document.getElementById("demo3").innerHTML= arr.toString();
-      }  
+
+      while (arr.length < count) {
+        arr.push(Math.floor(Math.random() * (max - min + 1) + min));
+        document.querySelector("#randomNos").innerHTML = arr.toString();
+      }
     }
   </script>
 </head>
@@ -41,14 +41,14 @@
 <body>
   <div class="flex">
     <div>Min limit</div>
-    <input id= "demo0" type="number" class="box" style="margin-left: 4px;"></input>
+    <input id="minNo" type="number" class="box" style="margin-left: 4px;"></input>
     <div>Max limit</div>
-    <input id="demo1" type="number" class="box"></input>
+    <input id="maxNo" type="number" class="box"></input>
     <div>Count</div>
-    <input id="demo2" type="number" class="box" style="margin-left: 24px;"></input>
+    <input id="countNo" type="number" class="box" style="margin-left: 24px;"></input>
   </div>
-  <button onclick="myFunction()">Generate random</button>
-  <div>Generated Num: <span id="demo3"></span></div>
+  <button onclick="displayRandomNos()">Generate random</button>
+  <div>Generated Num: <span id="randomNos"></span></div>
 </body>
 
 </html>
