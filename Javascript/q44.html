@@ -19,8 +19,8 @@
   <script>
     const charList = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*-_';
     function generateStrings() {
-      const length = Number(document.querySelector("#charLength").value);
-      const count = Number(document.querySelector("#countNo").value);
+      const length = Number(document.querySelector("#char-length").value);
+      const count = Number(document.querySelector("#count-num").value);
       let str = '';
       for (let j = 0; j < count; j++) {
         for (let i = 0; i < length; i++) {
@@ -29,7 +29,7 @@
         }
         str = str + '<br/>';
       }
-      document.querySelector("#outputStrings").innerHTML = str;
+      document.querySelector("#output-strings").innerHTML = str;
     }
   </script>
 </head>
@@ -39,20 +39,20 @@
     <tr>
       <th>Character Length</th>
       <td>
-        <input id="charLength" type="number"></input>
+        <input id="char-length" type="number"></input>
       </td>
     </tr>
     <tr>
       <th>Count</th>
       <td>
-        <input id="countNo" type="number"></input>
+        <input id="count-num" type="number"></input>
       </td>
     </tr>
   </table>
 
   <button onclick="generateStrings()">Generate random</button>
 
-  <div id="outputStrings"></div>
+  <div id="output-strings"></div>
 </body>
 
 </html>
