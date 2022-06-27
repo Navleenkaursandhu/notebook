@@ -18,22 +18,22 @@
   </style>
 
   <script>
-    var val = 0;
-    function myFunc() {
-    document.getElementById("demo0").innerHTML= val--;
+    let val = 0;
+    function increment() {
+      document.getElementById("number").innerHTML = val--;
     }
 
-    function myFunction() {
-      document.getElementById("demo0").innerHTML= val++;
+    function decrement() {
+      document.getElementById("number").innerHTML = val++;
     }
   </script>
 </head>
 
 <body>
   <div class="flex">
-  <button onclick="myFunc()">-</button>
-  <div id="demo0">0</div>
-  <button onclick="myFunction()">+</button>
+    <button onclick="increment()">-</button>
+    <div id="number">0</div>
+    <button onclick="decrement()">+</button>
   </div>
 </body>
 
