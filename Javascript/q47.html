@@ -20,11 +20,14 @@
   <script>
     let val = 0;
     function decrement() {
-      document.getElementById("number").innerHTML = val--;
+      if (val > 0) {
+        val = val - 1;
+      }
+      document.getElementById("number").innerHTML = val;
     }
-
     function increment() {
-      document.getElementById("number").innerHTML = val++;
+      val = val + 1;
+      document.getElementById("number").innerHTML = val;
     }
   </script>
 </head>
