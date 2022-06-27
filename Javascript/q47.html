@@ -19,11 +19,11 @@
 
   <script>
     let val = 0;
-    function increment() {
+    function decrement() {
       document.getElementById("number").innerHTML = val--;
     }
 
-    function decrement() {
+    function increment() {
       document.getElementById("number").innerHTML = val++;
     }
   </script>
@@ -31,9 +31,9 @@
 
 <body>
   <div class="flex">
-    <button onclick="increment()">-</button>
+    <button onclick="decrement()">-</button>
     <div id="number">0</div>
-    <button onclick="decrement()">+</button>
+    <button onclick="increment()">+</button>
   </div>
 </body>
 
