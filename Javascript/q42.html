@@ -28,11 +28,11 @@
   </style>
 
   <script>
-    function displayRandomNo() {
+    function displayRandomNum() {
       let min = Number(document.querySelector("#min-num").value);
       let max = Number(document.querySelector("#max-num").value);
-      let randomNo = Math.floor(Math.random() * (max - min + 1) + min);
-      document.querySelector("#random-num").innerHTML = randomNo;
+      let randomNum = Math.floor(Math.random() * (max - min + 1) + min);
+      document.querySelector("#random-num").innerHTML = randomNum;
     }
   </script>
 </head>
@@ -44,7 +44,7 @@
     <div>Max limit</div>
     <input id="max-num" type="number" class="box"></input>
   </div>
-  <button onclick="displayRandomNo()">Generate random</button>
+  <button onclick="displayRandomNum()">Generate random</button>
   <div>Generated Num: <span id="random-num"></span></div>
 </body>
 
