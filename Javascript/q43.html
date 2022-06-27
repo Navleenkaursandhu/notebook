@@ -25,14 +25,14 @@
 
   <script>
     function displayRandomNos() {
-      const min = Number(document.querySelector("#minNo").value);
-      const max = Number(document.querySelector("#maxNo").value);
-      const count = Number(document.querySelector("#countNo").value);
+      const min = Number(document.querySelector("#min-num").value);
+      const max = Number(document.querySelector("#max-num").value);
+      const count = Number(document.querySelector("#count-num").value);
       const arr = [];
 
       while (arr.length < count) {
         arr.push(Math.floor(Math.random() * (max - min + 1) + min));
-        document.querySelector("#randomNos").innerHTML = arr.toString();
+        document.querySelector("#random-nums").innerHTML = arr.toString();
       }
     }
   </script>
@@ -41,14 +41,14 @@
 <body>
   <div class="flex">
     <div>Min limit</div>
-    <input id="minNo" type="number" class="box" style="margin-left: 4px;"></input>
+    <input id="min-num" type="number" class="box" style="margin-left: 4px;"></input>
     <div>Max limit</div>
-    <input id="maxNo" type="number" class="box"></input>
+    <input id="max-num" type="number" class="box"></input>
     <div>Count</div>
-    <input id="countNo" type="number" class="box" style="margin-left: 24px;"></input>
+    <input id="count-num" type="number" class="box" style="margin-left: 24px;"></input>
   </div>
   <button onclick="displayRandomNos()">Generate random</button>
-  <div>Generated Num: <span id="randomNos"></span></div>
+  <div>Generated Num: <span id="random-nums"></span></div>
 </body>
 
 </html>
