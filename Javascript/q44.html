@@ -25,7 +25,7 @@
       for (let j = 0; j < count; j++) {
         for (let i = 0; i < length; i++) {
           const num = Math.round(Math.random() * charList.length);
-          str = str + charList.substring(num, num + 1);
+          str = str + charList.charAt(num);
         }
         str = str + '<br/>';
       }
