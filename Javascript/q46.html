@@ -19,36 +19,40 @@
   </style>
 
   <script>
-    function myFunction() {
-      const a = Number(document.querySelector("#demo0").value);
-      const b = Number(document.querySelector("#demo1").value);
-      const c = document.querySelector("#demo2").value;
+    function calculator() {
+      const val1 = Number(document.querySelector("#value1").value);
+      const val2 = Number(document.querySelector("#value2").value);
+      const operation = document.querySelector("#operators").value;
 
-      switch(c){
-      case "+": document.getElementById("demo3").innerHTML= a+b;
-      break;
-      case "*": document.getElementById("demo3").innerHTML= a*b;
-      break;
-      case "-": document.getElementById("demo3").innerHTML= a-b;
-      break;
-      case "/": document.getElementById("demo3").innerHTML= a/b;
+      switch (operation) {
+        case "+":
+          document.getElementById("output").innerHTML = val1 + val2;
+          break;
+        case "*":
+          document.getElementById("output").innerHTML = val1 * val2;
+          break;
+        case "-":
+          document.getElementById("output").innerHTML = val1 - val2;
+          break;
+        case "/":
+          document.getElementById("output").innerHTML = val1 / val2;
+      }
     }
-  }
   </script>
 </head>
 
 <body>
   <div class="flex">
-    <input id="demo0" type="number">
-    <select id="demo2" name="operators">
+    <input id="value1" type="number">
+    <select id="operators" name="operators">
       <option value="+">+</option>
       <option value="-">-</option>
       <option value="*">*</option>
       <option value="/">/</option>
     </select>
-    <input id="demo1" type="number">
-    <button onclick="myFunction()">=</button>
-    <div id="demo3"></div>
+    <input id="value2" type="number">
+    <button onclick="calculator()">=</button>
+    <div id="output"></div>
   </div>
 </body>
 
