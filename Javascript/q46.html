@@ -20,8 +20,8 @@
 
   <script>
     function calculator() {
-      const val1 = Number(document.querySelector("#value1").value);
-      const val2 = Number(document.querySelector("#value2").value);
+      const val1 = Number(document.querySelector("#value-1").value);
+      const val2 = Number(document.querySelector("#value-2").value);
       const operation = document.querySelector("#operators").value;
 
       switch (operation) {
@@ -43,14 +43,14 @@
 
 <body>
   <div class="flex">
-    <input id="value1" type="number">
+    <input id="value-1" type="number">
     <select id="operators" name="operators">
       <option value="+">+</option>
       <option value="-">-</option>
       <option value="*">*</option>
       <option value="/">/</option>
     </select>
-    <input id="value2" type="number">
+    <input id="value-2" type="number">
     <button onclick="calculator()">=</button>
     <div id="output"></div>
   </div>
