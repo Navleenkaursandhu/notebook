@@ -6,16 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>q41</title>
 
-<script>
-  function myFunction() {
-    document.getElementById("element1").innerHTML = Math.floor(Math.random() * 100);
-  }
-</script>
+  <script>
+    function generateRandomNo() {
+      document.getElementById("display-no").innerHTML = Math.floor(Math.random() * 100);
+    }
+  </script>
 </head>
 
 <body>
-  <button onclick="myFunction()">Generate random number between 0 and 100 </button>
-  <p id="element1"></p>
+  <button onclick="generateRandomNo()">Generate random number between 0 and 100 </button>
+  <p id="display-no"></p>
 </body>
 
 </html>
