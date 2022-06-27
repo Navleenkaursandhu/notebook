@@ -17,19 +17,19 @@
   </style>
 
   <script>
-    function myFunction() {
-      const length = document.querySelector("#demo0").value;
-      const count = document.querySelector("#demo1").value;
-      const charList = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*-_';
-      let x =' ';
-      for (let j=0; j<count; j++){
-        for(let i=0; i<length; i++) {
+    const charList = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*-_';
+    function generateStrings() {
+      const length = Number(document.querySelector("#charLength").value);
+      const count = Number(document.querySelector("#countNo").value);
+      let str = '';
+      for (let j = 0; j < count; j++) {
+        for (let i = 0; i < length; i++) {
           const num = Math.round(Math.random() * charList.length);
-          x = x + charList.substring(num, num+1);
+          str = str + charList.substring(num, num + 1);
         }
-        x = x + '<br/>';
+        str = str + '<br/>';
       }
-      document.getElementById("demo2").innerHTML= x;
+      document.querySelector("#outputStrings").innerHTML = str;
     }
   </script>
 </head>
@@ -39,20 +39,20 @@
     <tr>
       <th>Character Length</th>
       <td>
-        <input id="demo0" type="number"></input>
+        <input id="charLength" type="number"></input>
       </td>
     </tr>
     <tr>
       <th>Count</th>
       <td>
-        <input id="demo1" type="number"></input>
+        <input id="countNo" type="number"></input>
       </td>
     </tr>
   </table>
 
-  <button onclick="myFunction()">Generate random</button>
+  <button onclick="generateStrings()">Generate random</button>
 
-  <div id="demo2"></div>
+  <div id="outputStrings"></div>
 </body>
 
 </html>
