@@ -4,14 +4,15 @@ h1{
 }
 
 .container-1{
-  border: 1px solid black;
   margin: 0 auto;
   width: 80%;
   text-align: center;
 }
 
-.flex-box-container-1, .flex-blackjack-row-1, .flex-blackjack-row-2, .flex-blackjack-row-3{
-  border: 1px solid black;
+.flex-box-container-1,
+.flex-blackjack-row-1,
+.flex-blackjack-row-2,
+.flex-blackjack-row-3 {
   display: flex;
   padding: 10px;
   justify-content: space-around;
@@ -19,7 +20,6 @@ h1{
 }
 
 .flex-box-container-1 div{
-  border: 1px solid black;
   padding: 10px;
   display: flex;
   gap:10px
@@ -35,7 +35,6 @@ h1{
 }
 
 .flex-blackjack-row-1 div{
- border: 1px solid black;
  padding: 10px;
  text-align: center;
  flex: 1;

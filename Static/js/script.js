@@ -47,7 +47,7 @@ function decideWinner(yourChoice, computerChoice) {
   var rpsData = {
     "rock": { "rock": 0.5, "paper": 0, "scissors": 1 },
     "paper": { "rock": 1, "paper": 0.5, "scissors": 0 },
-    "scissors": { "rock": 0, "paper": 1, "scissors": 0.5 },
+    "scissors": { "rock": 0, "paper": 1, "scissors": 0.5 }
   }
   const yourScore = rpsData[yourChoice][computerChoice];//0
   const computerScore = rpsData[computerChoice][yourChoice]; //1
@@ -94,7 +94,7 @@ function frontEndRps(humanImgChoice, computerImgChoice, finalMessage) {
 }
 
 //change color of all buttons
-var all_buttons = document.getElementsByTagName("button");
+var all_buttons = document.querySelectorAll(".random-colored-buttons button");
 
 const copyAllButtons = [];
 for (let i = 0; i < all_buttons.length; i++) {
