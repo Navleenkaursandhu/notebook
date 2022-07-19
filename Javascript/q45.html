@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>q45</title>
+
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    th {
+      text-align: left;
+    }
+
+    #display-output {
+      font-family: monospace;
+    }
+  </style>
+
+  <script>
+    const vowels = ['a', 'ai', 'au', 'e', 'ea', 'ee', 'i', 'ia', 'io', 'o', 'oa', 'oi', 'oo', 'ou', 'u'];
+    const consonants = ['b', 'c', 'ch', 'cl', 'd', 'f', 'ff', 'g', 'gh', 'gl', 'j', 'k', 'l', 'll', 'm', 'mn', 'n', 'p', 'ph', 'ps', 'r', 'rh', 's', 'sc', 'sh', 'sk', 'st', 't', 'th', 'v', 'w', 'x', 'y', 'z'];
+    
+    function string() {
+      const length = Number(document.querySelector("#char-length").value);
+      const count = Number(document.querySelector("#count-no").value);
+
+      let output = '';
+      for (let i = 0; i < count; i++){
+        output = output + generatePronouncableLine(length) + "<br>";
+      }
+      
+      document.querySelector("#display-output").innerHTML = output;
+    }
+
+    function generatePronouncableLine(length) {
+      let finalString = '';
+      let pick = !!Math.round(Math.random());
+      
+      while (finalString.length < length) {
+        if (pick === true){
+          const randomVowel = vowels[Math.floor((Math.random()) * vowels.length)];
+          if ((finalString.length + randomVowel.length) <= length) {
+            finalString = finalString + randomVowel;
+            pick = !pick;
+          }
+        } else {
+          const randomConsonant = consonants[Math.floor((Math.random()) * consonants.length)];
+          if ((finalString.length + randomConsonant.length) <= length) {
+            finalString = finalString + randomConsonant;
+            pick = !pick;
+          }
+        }
+      }
+
+      return finalString;
+
+
+     
+
+      // TODO Create mutable string here which will be filled up with vowels and consonants
+
+      // TODO Create a mutable boolean. Randomly pick between 0 and 1.
+      // If it is 1 then the first character in the string will be a vowel.
+      // If it is 0 then the first character in the string will be a consonant.
+      // In the loop below, we will toggle the value of this boolean every time we put something into the string
+
+      // TODO Keep looping until you fill the string up to the length you actually need
+        // TODO Based on the value of the boolean above, pick a random value from the vowel or the consonant arrays
+
+        // TODO Get the length of the mutable string
+
+        // TODO Get the length of the characters we randomly picked above
+
+        // TODO If the length of the mutable string above + length of the characters we randomly picked is greater than `length` argument we got in the function
+        // then we do nothing
+        // else, we append the randomly picked characters to the mutable string
+
+      // TODO return the line that you generated
+    }
+  </script>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th> Character Length</th>
+      <td>
+        <input id="char-length" type="number"></input>
+      </td>
+    </tr>
+    <tr>
+      <th>Count</th>
+      <td>
+        <input id="count-no" type="number"></input>
+      </td>
+    </tr>
+  </table>
+  <button onclick="string()">Generate random</button>
+  <div id="display-output"></div>
+</body>
+
+</html>
