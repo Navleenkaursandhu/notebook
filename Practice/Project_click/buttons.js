@@ -1,7 +1,7 @@
 const initialCount = {
-  "purple": 0,
-  "pink": 0,
-  "blue": 0
+  "purple-btn": 0,
+  "pink-btn": 0,
+  "blue-btn": 0
 }
 
 let arrayBtnDivs = document.querySelectorAll(".btn");
@@ -10,8 +10,8 @@ console.log(arrayBtnDivs);
 const click = (array) => {
   array.forEach(btn => {
     return btn.onclick = () => {
-      initialCount[btn.value] = initialCount[btn.value] + 1;
-      return btn.innerText = initialCount[btn.value];
+      initialCount[btn.id] = initialCount[btn.id] + 1;
+      return btn.innerText = initialCount[btn.id];
     }
   });
 }
