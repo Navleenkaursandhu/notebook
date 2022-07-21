@@ -1,0 +1,38 @@
+body {
+  overflow: hidden;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 120px;
+}
+
+div button {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  font-size: x-large;
+}
+
+#click-btn,
+#reset-btn {
+  height: 80px;
+  width: 200px;
+  background-color: cornflowerblue;
+  border-radius: 20px;
+  font-size: larger;
+}
+
+#purple-btn {
+  background-color: rgb(177, 13, 177);
+}
+
+#pink-btn {
+  background-color: rgb(251, 26, 172);
+}
+
+#blue-btn {
+  background-color: turquoise;
+}
