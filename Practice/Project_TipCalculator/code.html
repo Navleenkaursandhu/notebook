@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./code.css">
+  <title>Tip Calculator</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="heading">TIP CALCULATOR</h1>
+    <div class="flex-column">
+      <div><b>Total Cost in dollars</b></div>
+      <input onkeyup="calculateBill()" id="input-cost" placeholder="Enter your total expenditure">
+      <div><b>Tip Percentage</b></div>
+      <input onkeyup="calculateBill()" id="input-tip-percent" placeholder="Enter tip amount">
+    </div>
+
+    <div class="flex-row">
+      <h3>Total Customers:</h3>
+      <button class="split-button" onclick="increasePeople()">+</button>
+      <div id="customers-count">1</div>
+      <button class="split-button" onclick="decreasePeople()">-</button>
+    </div>
+    <div class="flex-row">
+      <h3>Amount per customer:</h3>
+      <div id="customer-amt">0</div>
+    </div>
+
+  </div>
+  </div>
+  <script src="./code.js"></script>
+</body>
+
+</html>
