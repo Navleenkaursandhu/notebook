@@ -17,9 +17,23 @@
       <button id="scissors">✌</button>
     </div>
 
-    <div id="score" style="border: 1px solid black"></div>
-    <div id="selection" style="border: 1px solid black"></div>
-    <div id="game-result" style="border: 1px solid black"></div>
+    <div class="flex-row" id="selection">
+      <div class="title">Player's Selection 👉</div>
+      <div id="player-selection" class="output"></div>
+      <div class="divider title">vs</div>
+      <div id="bot-selection" class="output"></div>
+      <div class="title">👈 Bot's Selection</div>
+    </div>
+
+    <div class="flex-row" id="score">
+    <div class="title">Your Score:</div>
+    <div id="updated-score" class="output title">0</div>
+    </div>
+
+    <div class="flex-row" id="game-result">
+    <div class="title">Result:</div>
+    <div id="result" class="output title"></div>
+    </div>
 
     <div class="btn-div">
       <button id="reset">🔴</button>
