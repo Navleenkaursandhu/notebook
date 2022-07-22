@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>q40</title>
+
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: small;
+    }
+
+    .flex {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      width: 240px;
+    }
+  </style>
+
+  <script>
+    function onClick() {
+      const inputValue = document.querySelector("input").value;
+      document.getElementById("output-message").innerHTML = "Oh, hello there " + inputValue;
+    }  
+  </script>
+</head>
+
+<body>
+  <div class="flex">
+    <input placeholder="Your first name"></input>
+    <button onclick="onClick()">say hello</button>
+    <div id="output-message"></div>
+  </div>
+</body>
+
+</html>
