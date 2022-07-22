@@ -1,0 +1,10 @@
+.style-button {
+  padding: 10px;
+  background-color: rgb(162, 159, 159);
+  border: none;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
