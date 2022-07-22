@@ -15,19 +15,15 @@ const calculateBill = () => {
 }
 
 const increasePeople = () => {
-  let customers = Number(numCustomersElement.innerText);
-  customers++;
-  numCustomersElement.innerText = customers;
-  numberOfCustomers = customers;
+  numberOfCustomers++;
+  numCustomersElement.innerText = numberOfCustomers;
   calculateBill();
 }
 
 const decreasePeople = () => {
-  let customers = Number(numCustomersElement.innerText);
-  if (customers != 1) {
-    customers--;
-    numCustomersElement.innerText = customers;
-    numberOfCustomers = customers;
+  if (numberOfCustomers != 1) {
+    numberOfCustomers--;
+    numCustomersElement.innerText = numberOfCustomers;
   }
   calculateBill();
 }
