@@ -11,7 +11,7 @@ const calculateBill = () => {
   const billAmt = Number(costInput.value);
   const totalAmt = (Number(tipInput.value) * billAmt) / 100 + billAmt;
   const costPerCustomer = totalAmt / numberOfCustomers;
-  amountCustomersElement.innerText = `$${costPerCustomer}`;
+  amountCustomersElement.innerText = `$${costPerCustomer.toFixed(2)}`;
 }
 
 const increasePeople = () => {
