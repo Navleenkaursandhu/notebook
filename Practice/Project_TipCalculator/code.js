@@ -1,33 +1,33 @@
 const costInput = document.querySelector("#input-cost");
 const tipInput = document.querySelector("#input-tip-percent");
 
-const noCx = document.querySelector("#customers-count");
-const amtCustomers = document.querySelector("#customer-amt");
+const numCustomersElement = document.querySelector("#customers-count");
+const amountCustomersElement = document.querySelector("#customer-amt");
 
-let noOfCx = Number(noCx.innerText);
-console.log(noOfCx);
+let numberOfCustomers = Number(numCustomersElement.innerText);
+console.log(numberOfCustomers);
 
 const calculateBill = () => {
   const billAmt = Number(costInput.value);
   const totalAmt = (Number(tipInput.value) * billAmt) / 100 + billAmt;
-  const costPerCx = totalAmt / noOfCx;
-  amtCustomers.innerText = `$${costPerCx}`;
+  const costPerCustomer = totalAmt / numberOfCustomers;
+  amountCustomersElement.innerText = `$${costPerCustomer}`;
 }
 
 const increasePeople = () => {
-  let cx = Number(noCx.innerText);
-  cx++;
-  noCx.innerText = cx;
-  noOfCx = cx;
+  let customers = Number(numCustomersElement.innerText);
+  customers++;
+  numCustomersElement.innerText = customers;
+  numberOfCustomers = customers;
   calculateBill();
 }
 
 const decreasePeople = () => {
-  let cx = Number(noCx.innerText);
-  if (cx != 1) {
-    cx--;
-    noCx.innerText = cx;
-    noOfCx = cx;
+  let customers = Number(numCustomersElement.innerText);
+  if (customers != 1) {
+    customers--;
+    numCustomersElement.innerText = customers;
+    numberOfCustomers = customers;
   }
   calculateBill();
 }
