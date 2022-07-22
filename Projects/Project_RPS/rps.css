@@ -1,0 +1,33 @@
+.flex {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background-color: rgb(101, 8, 70);
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+
+}
+
+.btn-div button{
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  background-color: gray;
+  font-size:xx-large;
+  border: none;
+}
+
+.btn-div{
+  margin: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.title{
+  color: rgb(231, 218, 218);
+}
