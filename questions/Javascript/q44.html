@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>q44</title>
+
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    th {
+      text-align: left;
+    }
+  </style>
+
+  <script>
+    const charList = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*-_';
+    function generateStrings() {
+      const length = Number(document.querySelector("#char-length").value);
+      const count = Number(document.querySelector("#count-num").value);
+      let str = '';
+      for (let j = 0; j < count; j++) {
+        for (let i = 0; i < length; i++) {
+          const num = Math.round(Math.random() * charList.length);
+          str = str + charList.charAt(num);
+        }
+        str = str + '<br/>';
+      }
+      document.querySelector("#output-strings").innerHTML = str;
+    }
+  </script>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th>Character Length</th>
+      <td>
+        <input id="char-length" type="number"></input>
+      </td>
+    </tr>
+    <tr>
+      <th>Count</th>
+      <td>
+        <input id="count-num" type="number"></input>
+      </td>
+    </tr>
+  </table>
+
+  <button onclick="generateStrings()">Generate random</button>
+
+  <div id="output-strings"></div>
+</body>
+
+</html>

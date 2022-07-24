@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial scale= 1.0">
+  <title>q36</title>
+
+  <style>
+    @keyframes animate {
+      0% {
+        transform: scale(1);
+      }
+
+      30% {
+        transform: scale(1.25, 0.75);
+      }
+
+      40% {
+        transform: scale(0.75, 1.25);
+      }
+
+      50% {
+        transform: scale(1.15, 0.85);
+      }
+
+      65% {
+        transform: scale(0.95, 1.05);
+      }
+
+      75% {
+        transform: scale(1.05, 0.95);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .circle {
+      height: 50px;
+      width: 50px;
+      background-color: #ddd;
+      border-radius: 50px;
+    }
+
+    .circle:active {
+      animation: animate 1s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="circle"></div>
+</body>
+
+</html>

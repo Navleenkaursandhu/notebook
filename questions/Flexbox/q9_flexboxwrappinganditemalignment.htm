@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex box wrapping and item alignment</title>
+
+  <style>
+    .div-flex {
+      padding: 10px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      width: 350px;
+    }
+
+    .border {
+      border: 1px solid black;
+    }
+
+    .width {
+      width: 100px;
+    }
+
+    .div-1 {
+      height: 100px;
+    }
+
+    .div-2 {
+      height: 120px;
+    }
+
+    .div-3 {
+      height: 140px;
+    }
+
+    .div-4 {
+      height: 160px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div-flex border">
+    <div class="div-1 border width">W=100px<br>H=100px</div>
+    <div class="div-2 border width">W=100px<br>H=120px</div>
+    <div class="div-3 border width">W=100px<br>H=140px</div>
+    <div class="div-4 border width">W=100px<br>H=160px</div>
+    <div class="div-1 border width">W=100px<br>H=100px</div>
+  </div>
+</body>
+
+</html>

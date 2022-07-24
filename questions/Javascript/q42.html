@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>q42</title>
+
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      width: 300px;
+      gap: 10px;
+    }
+
+    .box {
+      width: 200px;
+    }
+
+    button {
+      margin-top: 5px;
+    }
+  </style>
+
+  <script>
+    function displayRandomNum() {
+      let min = Number(document.querySelector("#min-num").value);
+      let max = Number(document.querySelector("#max-num").value);
+      let randomNum = Math.floor(Math.random() * (max - min + 1) + min);
+      document.querySelector("#random-num").innerHTML = randomNum;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="flex">
+    <div>Min limit</div>
+    <input id="min-num" type="number" class="box" style="margin-left: 4px;"></input>
+    <div>Max limit</div>
+    <input id="max-num" type="number" class="box"></input>
+  </div>
+  <button onclick="displayRandomNum()">Generate random</button>
+  <div>Generated Num: <span id="random-num"></span></div>
+</body>
+
+</html>

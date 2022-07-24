@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>q26</title>
+
+  <style>
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    li {
+      display: flex;
+    }
+
+    ol {
+      counter-reset: section;
+    }
+
+    li::before {
+      counter-increment: section;
+      content: counter(section);
+      background-color: black;
+      color: white;
+      padding: 4px 8px;
+      margin-bottom: 2px;
+      margin-right: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <ol>
+      <li>Learn HTML</li>
+      <li>Learn CSS</li>
+      <li>Make Webpages using HTML and CSS</li>
+      <li>Learn Javascript<br/>and add interactivity<br/>to the web page</li>
+      <li>Learn React</li>
+    </ol>
+  </div>
+</body>
+
+</html>
