@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>q47</title>
+
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .flex {
+      display: flex;
+      gap: 10px;
+    }
+  </style>
+
+  <script>
+    let val = 0;
+    function decrement() {
+      if (val > 0) {
+        val = val - 1;
+      }
+      document.getElementById("number").innerHTML = val;
+    }
+    function increment() {
+      val = val + 1;
+      document.getElementById("number").innerHTML = val;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="flex">
+    <button onclick="decrement()">-</button>
+    <div id="number">0</div>
+    <button onclick="increment()">+</button>
+  </div>
+</body>
+
+</html>

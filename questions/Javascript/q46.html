@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>q46</title>
+
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .flex {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+  </style>
+
+  <script>
+    function calculator() {
+      const val1 = Number(document.querySelector("#value-1").value);
+      const val2 = Number(document.querySelector("#value-2").value);
+      const operation = document.querySelector("#operators").value;
+
+      switch (operation) {
+        case "+":
+          document.getElementById("output").innerHTML = val1 + val2;
+          break;
+        case "*":
+          document.getElementById("output").innerHTML = val1 * val2;
+          break;
+        case "-":
+          document.getElementById("output").innerHTML = val1 - val2;
+          break;
+        case "/":
+          document.getElementById("output").innerHTML = val1 / val2;
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="flex">
+    <input id="value-1" type="number">
+    <select id="operators" name="operators">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <input id="value-2" type="number">
+    <button onclick="calculator()">=</button>
+    <div id="output"></div>
+  </div>
+</body>
+
+</html>
