@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practice</title>
+
+  <style>
+    .flex {
+      display: flex;
+      border: 1px solid black;
+      padding: 10px;
+      gap: 10px;
+    }
+
+    .box1 {
+      border: 1px solid black;
+    }
+
+    .box2 {
+      border: 1px solid black;
+      flex-grow: 1;
+    }
+
+    .box3 {
+      width: 100px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex">
+    <div class="box1">div 1 only takes space needed</div>
+    <div class="box2">div 2 fills the remaining space</div>
+    <div class="box3">div 3 takes up a width of 100px</div>
+  </div>
+</body>
+
+</html>

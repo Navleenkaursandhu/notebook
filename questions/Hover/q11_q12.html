@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>q11andq12</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .div-1 {
+      padding: 8px;
+      width: 150px;
+      background-color: #eee;
+      border-bottom: 10px solid #888;
+    }
+
+    .show-on-hover {
+      display: none;
+    }
+
+    .show-on-click {
+      display: none;
+    }
+
+    .div-1:hover {
+      cursor: pointer;
+      border-bottom: 7px solid #888;
+      border-top: 3px solid #fff;
+    }
+
+    .div-1:hover .show-on-hover {
+      display: inline;
+    }
+
+    .div-1:hover .show-normal {
+      display: none;
+    }
+
+    .div-1:active {
+      cursor: no-drop;
+      border-bottom: 3px solid #888;
+      border-top: 7px solid #fff;
+    }
+
+    .div-1:active .show-on-click {
+      display: inline;
+    }
+
+    .div-1:active .show-on-hover {
+      display: none;
+    }
+
+    .div-1:active .show-normal {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div-1">
+    W= 150px, <br> padding= 8px, bottom, bottom bar =
+    <span class="show-normal">10px</span>
+    <span class="show-on-hover">7px</span>
+    <span class="show-on-click">3px</span>
+  </div>
+</body>
+
+</html>
