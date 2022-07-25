@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bank.css">
+  <title>Bank Account</title>
+</head>
+
+<body>
+  <div class="title">YOUR BANK ACCOUNT</div>
+  <div class="flexrow">
+    <button class="button" id="deposit-btn">CLICK HERE TO DEPOSIT</button>
+    <input class="input" id="deposit-amt" type="number" placeholder="Enter amount">
+    <button class="button" id="withdrawal-btn">CLICK HERE TO WITHDRAW</button>
+    <input class="input" id="withdraw-amt" type="number" placeholder="Enter amount">
+
+    <div class="balance">
+      <p>Balance in dollars: </p>
+      <div id="balance-amt"></div>
+    </div>
+
+    <script src="./bank.js"></script>
+</body>
+
+</html>
