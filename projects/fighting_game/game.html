@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./game.css">
+  <title>Fighting Game</title>
+</head>
+
+<body>
+  <div class="flex-box2">
+    <h1 id="player-A">Player A</h1>
+    <h1 id="player-B">Player B</h1>
+  </div>
+
+  <div class="flex-box2">
+    <img src="https://i.gifer.com/origin/9a/9a85181d85f957e7b67a08255807107d_w200.gif">
+    <img src="https://www.fightersgeneration.com/nf8/char3/athena-kof13-spin-kick.gif">
+  </div>
+
+  <div class="flex-box2">
+    <button class="button">Q: Attack</button>
+    <button class="button">P: Attack</button>
+  </div>
+
+  <div class="flex-box2">
+    <button class="button">A: Heal</button>
+    <button class="button">L: Heal</button>
+  </div>
+
+  <div class="flex-box2">
+    <h1 class="score" id="health-player-A">100</h1>
+    <h1 class="score" id="health-player-B">100</h1>
+  </div>
+
+  <div class="flex-box2">
+    <button id="reset" class="button">RESET</button>
+    <button id="simulate" class="button">SIMULATE</button>
+  </div>
+
+  <div class="flex-box2">
+    <h1 id="result">LET'S PLAY!</h1>
+  </div>
+
+  <audio id="pAattack" controls style="display:none">
+    <source src="./sounds/fastpunch.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="pAheal" controls style="display:none">
+    <source src="./sounds/fastheal.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="pBattack" controls style="display:none">
+    <source src="./sounds/quickhit.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="pBheal" controls style="display:none">
+    <source src="./sounds/quickheal.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="victory" controls style="display:none">
+    <source src="./sounds/victory.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="./game.js"></script>
+</body>
+
+</html>
