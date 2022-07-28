@@ -67,10 +67,14 @@ class Player {
   }
 
   lifeline() {
-    //player can just seek 5 lifelines in total
+    if(this.health < 100){
+      let randomHealth = Math.ceil(Math.random() * 5)
+      this.health = this.health + randomHealth;
 
-    let randomHealth = Math.ceil(Math.random() * 5)
-    this.health = this.health + randomHealth;
+      if(this.health > 100){
+        this.health = 100;
+      }
+    }
     updateUI();
   }
 
