@@ -12,7 +12,7 @@ body {
 }
 
 div > img {
-  margin-left: 80px;
+  margin-left: 70px;
 }
 
 .button {
@@ -23,4 +23,19 @@ div > img {
   background-color: rgb(130, 130, 189);
   border: none;
   font-weight: bold;
+}
+
+.pointer-A {
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-right: 30px solid white;
+  border-bottom: 15px solid transparent;
+}
+
+
+.pointer-B {
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 30px solid white;
+  border-bottom: 15px solid transparent;
 }

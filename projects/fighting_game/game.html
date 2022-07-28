@@ -9,8 +9,14 @@
 
 <body>
   <div class="flex-box2">
-    <h1 id="player-A">Player A</h1>
-    <h1 id="player-B">Player B</h1>
+    <h1>
+    <span id="player-A"></span>
+    <span class="pointer-A"></span> Round
+    <span>1</span>of
+    <span>10</span>
+    <span class="pointer-B"></span>
+    <span id="player-B"></span>
+    </h1>
   </div>
 
   <div class="flex-box2">
@@ -19,13 +25,13 @@
   </div>
 
   <div class="flex-box2">
-    <button class="button">Q: Attack</button>
-    <button class="button">P: Attack</button>
+    <button class="button">A: Hit</button>
+    <button class="button">L: Hit</button>
   </div>
 
   <div class="flex-box2">
-    <button class="button">A: Heal</button>
-    <button class="button">L: Heal</button>
+    <button class="button">Z: Lifeline</button>
+    <button class="button">M: Lifeline</button>
   </div>
 
   <div class="flex-box2">
@@ -34,7 +40,7 @@
   </div>
 
   <div class="flex-box2">
-    <button id="reset" class="button">RESET</button>
+    <button id="restart" class="button">RESTART</button>
     <button id="simulate" class="button">SIMULATE</button>
   </div>
 
@@ -42,23 +48,23 @@
     <h1 id="result">LET'S PLAY!</h1>
   </div>
 
-  <audio id="pAattack" controls style="display:none">
+  <audio id="pAhit" controls style="display:none">
     <source src="./sounds/fastpunch.mp3" type="audio/mpeg">
   </audio>
 
-  <audio id="pAheal" controls style="display:none">
+  <audio id="pAlifeline" controls style="display:none">
     <source src="./sounds/fastheal.mp3" type="audio/mpeg">
   </audio>
 
-  <audio id="pBattack" controls style="display:none">
+  <audio id="pBhit" controls style="display:none">
     <source src="./sounds/quickhit.mp3" type="audio/mpeg">
   </audio>
 
-  <audio id="pBheal" controls style="display:none">
+  <audio id="pBlifeline" controls style="display:none">
     <source src="./sounds/quickheal.mp3" type="audio/mpeg">
   </audio>
 
-  <audio id="victory" controls style="display:none">
+  <audio id="winner" controls style="display:none">
     <source src="./sounds/victory.mp3" type="audio/mpeg">
   </audio>
 
