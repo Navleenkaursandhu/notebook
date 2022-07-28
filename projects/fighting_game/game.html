@@ -10,12 +10,12 @@
 <body>
   <div class="flex-box2">
     <h1>
-    <span id="player-A"></span>
-    <span class="pointer-A"></span> Round
-    <span>1</span>of
-    <span>10</span>
-    <span class="pointer-B"></span>
-    <span id="player-B"></span>
+      <span id="player-A"></span>
+      <span class="pointer-A"></span> Round
+      <span>1</span>of
+      <span>10</span>
+      <span class="pointer-B"></span>
+      <span id="player-B"></span>
     </h1>
   </div>
 
@@ -41,32 +41,33 @@
 
   <div class="flex-box2">
     <button id="restart" class="button">RESTART</button>
-    <button id="simulate" class="button">SIMULATE</button>
   </div>
 
   <div class="flex-box2">
     <h1 id="result">LET'S PLAY!</h1>
   </div>
 
-  <audio id="pAhit" controls style="display:none">
-    <source src="./sounds/fastpunch.mp3" type="audio/mpeg">
-  </audio>
+  <div class="audio-container">
+    <audio id="pAhit" controls>
+      <source src="./sounds/fastpunch.mp3" type="audio/mpeg">
+    </audio>
 
-  <audio id="pAlifeline" controls style="display:none">
-    <source src="./sounds/fastheal.mp3" type="audio/mpeg">
-  </audio>
+    <audio id="pAlifeline" controls>
+      <source src="./sounds/fastheal.mp3" type="audio/mpeg">
+    </audio>
 
-  <audio id="pBhit" controls style="display:none">
-    <source src="./sounds/quickhit.mp3" type="audio/mpeg">
-  </audio>
+    <audio id="pBhit" controls>
+      <source src="./sounds/quickhit.mp3" type="audio/mpeg">
+    </audio>
 
-  <audio id="pBlifeline" controls style="display:none">
-    <source src="./sounds/quickheal.mp3" type="audio/mpeg">
-  </audio>
+    <audio id="pBlifeline" controls>
+      <source src="./sounds/quickheal.mp3" type="audio/mpeg">
+    </audio>
 
-  <audio id="winner" controls style="display:none">
-    <source src="./sounds/victory.mp3" type="audio/mpeg">
-  </audio>
+    <audio id="winner" controls>
+      <source src="./sounds/victory.mp3" type="audio/mpeg">
+    </audio>
+  </div>
 
   <script src="./game.js"></script>
 </body>
