@@ -8,30 +8,51 @@
 </head>
 
 <body>
-  <div class="flex-box2">
+  <div class="flex-box2" style=" border: 1px solid black">
+  
     <h1>
       <span id="player-A"></span>
-      <span class="pointer-A"></span> Round
-      <span>1</span>of
-      <span>10</span>
+      <span class="pointer-A"></span>
+      <span id="current-round" class="round-container"></span>
       <span class="pointer-B"></span>
       <span id="player-B"></span>
     </h1>
+   
+  </div>
+  <div class="flex-box2 lifeline-container space-between">
+    <div class="lifeline-flex"></div>
+    <div class="lifeline-flex"></div>
   </div>
 
   <div class="flex-box2">
-    <img src="https://i.gifer.com/origin/9a/9a85181d85f957e7b67a08255807107d_w200.gif">
-    <img src="https://www.fightersgeneration.com/nf8/char3/athena-kof13-spin-kick.gif">
+    
+    <img style= "border: 1px solid black; " src="https://i.gifer.com/origin/9a/9a85181d85f957e7b67a08255807107d_w200.gif">
+    <img class="margin-left" style= "border: 1px solid black;" src="https://www.fightersgeneration.com/nf8/char3/athena-kof13-spin-kick.gif">
   </div>
 
   <div class="flex-box2">
-    <button class="button">A: Hit</button>
-    <button class="button">L: Hit</button>
+    <div class="action gap" style="border: 1px solid red;">
+      <div>HIT</div>
+      <div class="select-action center">A</div>
+    </div>
+
+    <div class="action gap" style="border: 1px solid red">
+      <div class="select-action center">L</div>
+      <div>HIT</div>
+    </div>
   </div>
 
   <div class="flex-box2">
-    <button class="button">Z: Lifeline</button>
-    <button class="button">M: Lifeline</button>
+    <div class="action" style="border: 1px solid red;">
+      <div>LIFELINE</div>
+      <div class="select-action center">Z</div>
+      
+    </div>
+
+    <div class="action" style="border: 1px solid red">
+      <div class="select-action center">M</div>
+      <div>LIFELINE</div>
+    </div>
   </div>
 
   <div class="flex-box2">
