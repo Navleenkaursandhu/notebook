@@ -11,6 +11,43 @@ body {
   border: 1px solid black;
 }
 
+.game-info-container {
+  gap: 20px;
+}
+
+.player-info-container{
+display:flex;
+flex-direction: column; 
+flex:1;
+}
+
+.health-bar-container{
+  height: 20px;
+}
+
+.health-bar-container .health-bar{
+  width: 50%;
+  height: 100%;
+  background-color: black;
+}
+
+#player-a-info .health-bar-container{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#player-a-info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.counter {
+  width: 100px;
+  background-color: burlywood;
+  text-align: center;
+}
+
 div > img {
   margin-right: -64px;
 }
@@ -54,12 +91,7 @@ div > img {
   margin-top: -27px; 
 }
 
-.round-container{
-  background-color:rgb(222, 161, 189); 
-  padding: 36px; 
-  margin: 20px;
-  border-radius: 10px;
-}
+
 
 .lifeline-flex{
   border: 1px solid black;
